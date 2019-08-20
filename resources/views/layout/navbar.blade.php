@@ -38,6 +38,8 @@
                                 <li><a href="#">Call for Papers</a></li>
                                 <li><a href="#">Location</a></li>
                                 <li><a href="#">Registration</a></li>
+                                <li><a href="#">Schedule</a></li>
+                                <li><a href="#">Payment Details</a></li>
                             </ul>
                         </li>
                         {{-- downloads menu drop down --}}
