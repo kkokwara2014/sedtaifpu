@@ -27,11 +27,11 @@
                     <ul class="nav navbar-nav navbar-right">
 
                         <!-- navigation menu -->
-                        <li class="active"><a data-scroll href="#"><span class="ion-ios-home"
+                        <li class="active"><a href="{{ route('homepage') }}"><span class="ion-ios-home"
                                     style="font-size: 20px;"></span></a></li>
-                        <li><a data-scroll href="#about">About</a></li>
+                        <li><a href="{{ route('aboutus') }}">About</a></li>
                         {{-- conference menu drop down --}}
-                        <li><a data-scroll href="#">Conference</a>
+                        <li><a href="#">Conference</a>
                             <ul>
                                 <li><a href="#">Themes</a></li>
                                 <li><a href="#">Committee Members</a></li>
@@ -41,23 +41,23 @@
                             </ul>
                         </li>
                         {{-- downloads menu drop down --}}
-                        <li><a data-scroll href="#">Downloads</a>
+                        <li><a href="#">Downloads</a>
                             <ul>
                                 <li><a href="#">Abstract Template</a></li>
                                 <li><a href="#">Full Paper Template</a></li>
                             </ul>
                         </li>
                         {{-- submit paper menu drop down --}}
-                        <li><a data-scroll href="#">Submit Paper</a>
+                        <li><a href="#">Submit Paper</a>
                             <ul>
                                 <li><a href="#">Abstract</a></li>
                                 <li><a href="#">Full Paper</a></li>
                             </ul>
                         </li>
-                        <li><a data-scroll href="#faq">FAQ</a></li>
-                        <li><a data-scroll href="#schedule">Contact</a></li>
+                        <li><a href="{{ route('faq') }}">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
                         
-                        <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+                        <!-- <li><a href="#">Sponsorship</a></li> -->
                         
 
                     </ul>

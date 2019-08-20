@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/','FrontendController@index')->name('homepage');
+Route::get('about','FrontendController@about')->name('aboutus');
+Route::get('faq','FrontendController@faq')->name('faq');
 
 Auth::routes();
 
