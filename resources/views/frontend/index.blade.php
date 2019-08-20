@@ -42,7 +42,8 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!-- navigation menu -->
-                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li class="active"><a data-scroll href="#"><span class="ion-ios-home"></span></a></li>
+                    <li><a data-scroll href="#about">About</a></li>
                     <li><a data-scroll href="#speakers">Speakers</a></li>              
                     <li><a data-scroll href="#schedule">Schedule</a></li>                  
                     <li><a data-scroll href="#partner">Partner</a></li>                  
