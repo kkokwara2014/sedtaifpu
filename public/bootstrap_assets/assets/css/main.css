@@ -419,7 +419,7 @@ div ul li ul li a:hover {
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+    background: url(../images/backgrounds/bg-1.jpg) no-repeat center center/cover;
     display: table;
 }
 
