@@ -8,7 +8,7 @@
 
                     <!-- logo image  -->
                     <img src="{{asset('bootstrap_assets/assets/images/logo.png')}}" alt="Logo">
-                    Conference 2015
+                    NCESWCD2019
                 </a>
             </div>
 
@@ -45,8 +45,8 @@
                 {{-- downloads menu drop down --}}
                 <li><a href="#">Downloads</a>
                     <ul>
-                    <li><a href="{{ route('download.abstract') }}">Abstract Template</a></li>
-                    <li><a href="{{ route('download.fullpaper') }}">Full Paper Template</a></li>
+                        <li><a href="{{ route('download.abstract') }}">Abstract Template</a></li>
+                        <li><a href="{{ route('download.fullpaper') }}">Full Paper Template</a></li>
                     </ul>
                 </li>
                 {{-- submit paper menu drop down --}}
@@ -70,13 +70,16 @@
 <header id="site-header" class="site-header valign-center">
     <div class="intro">
 
-        <h2>25 April, 2015 / Townhall California</h2>
+        <h2>09 - 11 October, 2019 / Academic Auditorium, <br>
+            Akanu Ibiam Federal Polytechnic, Unwana. <br>
+            P.M.B 1007, Afikpo, Ebonyi State.
+        </h2>
 
-        <h1>Freelancer Conference 2015</h1>
+        <h1>National Conference SEDT-2019</h1>
 
-        <p>First &amp; Largest Conference</p>
+        {{-- <p>First &amp; Largest Conference</p> --}}
 
-        <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+        <a class="btn btn-white" href="#registration">Register Now</a>
 
     </div>
 </header>
