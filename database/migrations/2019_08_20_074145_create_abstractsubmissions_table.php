@@ -15,6 +15,13 @@ class CreateAbstractsubmissionsTable extends Migration
     {
         Schema::create('abstractsubmissions', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('papertitle');
+            $table->text('leadauthor');
+            $table->text('coauthor');
+            $table->text('email');
+            $table->integer('country_id');
+            $table->text('paperabstract');
+            $table->text('filename');
             $table->timestamps();
         });
     }

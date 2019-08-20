@@ -15,6 +15,13 @@ class CreateProgschedulesTable extends Migration
     {
         Schema::create('progschedules', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('tasktitle');
+            $table->text('namewithtitle');
+            $table->text('designation');
+            $table->text('portfolio');
+            $table->text('organization');
+            $table->string('scheduledate');
+            $table->string('scheduletime');
             $table->timestamps();
         });
     }
