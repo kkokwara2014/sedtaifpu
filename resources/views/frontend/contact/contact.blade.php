@@ -40,7 +40,18 @@
 
             <div class="col-md-5 col-lg-5">
                <p>You can reach us faster by getting in touch with</p> 
-                <p><span class="ion-ios-email" style="font-size: 20px"></span> nceswcd2019@sedtaifpu.org</p>
+               <div class="row">
+                   <div class="col-md-1"><span class="ion-ios-email" style="font-size: 20px"></span></div><div class="col-md-11 col-lg-11" style="text-align: left">nceswcd2019@sedtaifpu.org</div>
+               </div>
+               <div class="row">
+                   <div class="col-md-1"><span class="ion-ios-telephone" style="font-size: 20px"></span></div><div class="col-md-11 col-lg-11" style="text-align: left">+234-(0)-803-888-3919</div>
+               </div>
+               <div class="row">
+                   <div class="col-md-1"><span class="ion-ios-location" style="font-size: 20px"></span></div><div class="col-md-11 col-lg-11" style="text-align: left">School of Environmental Design &amp; Technology <br>
+                     Akanu Ibiam Federal Polytechnic, Unwana. <br>
+                    P. M. B. 1007, Afikpo, Ebonyi State.</div>
+               </div>
+               
             </div>
         </div>
 
