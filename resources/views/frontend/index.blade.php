@@ -44,7 +44,15 @@
                     <!-- navigation menu -->
                     <li class="active"><a data-scroll href="#"><span class="ion-ios-home" style="font-size: 20px;"></span></a></li>
                     <li><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="#speakers">Speakers</a></li>              
+                    <li><a data-scroll href="#">Conference</a>
+                        <ul>
+                            <li><a href="#">Themes</a></li>
+                            <li><a href="#">Committee Members</a></li>
+                            <li><a href="#">Call for Papers</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Registration</a></li>
+                        </ul>
+                    </li>              
                     <li><a data-scroll href="#schedule">Schedule</a></li>                  
                     <li><a data-scroll href="#partner">Partner</a></li>                  
                     <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
