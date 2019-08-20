@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Conference</title>
+    <title>SEDT-AIFPU</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{asset('bootstrap_assets/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('bootstrap_assets/bower_components/ionicons/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('bootstrap_assets/assets/css/main.css')}}">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -23,7 +23,7 @@
                     <a class="logo" href="index.html">
                         
                         <!-- logo image  -->
-                        <img src="assets/images/logo.png" alt="Logo">
+                        <img src="{{asset('bootstrap_assets/assets/images/logo.png')}}" alt="Logo">
 
                         Conference 2015
                     </a>
@@ -79,7 +79,7 @@
                     <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
 
                     <figure>
-                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                        <img alt="" class="img-responsive" src="{{asset('bootstrap_assets/assets/images/about-us.jpg')}}">
                     </figure>
 
                 </div><!-- /.col-sm-6 -->
@@ -150,7 +150,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/speakers/speaker-1.jpg')}}">
                         </figure>
 
                         <h4>Jhon Smith</h4>
@@ -171,7 +171,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-2.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/speakers/speaker-2.jpg')}}">
                         </figure>
 
                         <h4>Jhon Smith</h4>
@@ -192,7 +192,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-3.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/speakers/speaker-3.jpg')}}">
                         </figure>
 
                         <h4>Jhon Smith</h4>
@@ -216,7 +216,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-4.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/speakers/speaker-4.jpg')}}">
                         </figure>
 
                         <h4>Jhon Smith</h4>
@@ -236,7 +236,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-5.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/speakers/speaker-5.jpg')}}">
                         </figure>
 
                         <h4>Jhon Smith</h4>
@@ -256,7 +256,7 @@
                 <div class="col-md-4">
                     <div class="speaker">
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-6.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/speakers/speaker-6.jpg')}}">
                         </figure>
                         <h4>Jhon Smith</h4>
                         <p>CEO of Peren</p>
@@ -519,39 +519,39 @@
                     <ul class="grid">
                         
                         <li class="grid-item grid-item-sm-6">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-1.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-2.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-3.jpg')}}">
                         </li>
                     
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-5.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-6.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-7.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-8.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-2.jpg')}}">
                         </li>
 
                         <li class="grid-item grid-item-sm-3">
-                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{asset('bootstrap_assets/assets/images/photos/photos-3.jpg')}}">
                         </li>
                     </ul>
                 </div>
@@ -592,9 +592,9 @@
     </footer>
 
     <!-- script -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('bootstrap_assets/bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{asset('bootstrap_assets/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('bootstrap_assets/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')}}"></script>
+    <script src="{{asset('bootstrap_assets/assets/js/main.js')}}"></script>
 </body>
 </html>
