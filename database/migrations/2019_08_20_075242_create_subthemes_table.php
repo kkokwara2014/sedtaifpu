@@ -15,6 +15,7 @@ class CreateSubthemesTable extends Migration
     {
         Schema::create('subthemes', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('title');
             $table->timestamps();
         });
     }
