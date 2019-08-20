@@ -7,8 +7,11 @@
             <div class="col-sm-5">
                 <h3 class="section-title">Conference Location</h3>
                 <address>
-                    <p>Eardenia<br> The Grand Hall<br> House # 08, Road #52, Street<br> Phone: +1159t3764<br>
-                        Email: example@mail.com</p>
+                    <p>Academic Lecture Theatre<br> Akanu Ibiam Federal Polytechnic, Unwana<br>
+                        P.M.B 1007, Afikpo,<br> 
+                        Ebonyi State <br>
+                        Phone: +234(0)803-888-3919<br>
+                        Email: nceswcd2019@sedtaifpu.org</p>
                 </address>
             </div>
             <div class="col-sm-7">
