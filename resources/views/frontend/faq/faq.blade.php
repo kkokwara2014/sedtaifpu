@@ -5,11 +5,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">Event FAQs</h3>
+                <h3 class="section-title">Conference FAQs</h3>
+                
+                Below are the Frequently Asked Questions about this Conference.
+                <br>
             </div>
+           
         </div>
+        <br>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                     <div class="panel panel-default">
