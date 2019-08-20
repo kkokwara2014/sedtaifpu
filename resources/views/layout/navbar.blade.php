@@ -55,7 +55,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('faq') }}">FAQ</a></li>
-                        <li><a href="">Contact</a></li>
+                    <li><a href="{{ route('contactus') }}">Contact</a></li>
                         
                         <!-- <li><a href="#">Sponsorship</a></li> -->
                         

@@ -18,11 +18,7 @@ class FrontendController extends Controller
         $title='About Us';
         return view('frontend.about.aboutus', compact('title'));
     }
-    public function contact()
-    {
-        $title='Contact Us';
-        return view('frontend.about.aboutus', compact('title'));
-    }
+    
     public function faq()
     {
         $title='FAQ';
