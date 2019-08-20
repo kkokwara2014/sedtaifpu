@@ -351,20 +351,42 @@ div ul li {
     text-decoration: none;
 }
 
+div ul li ul li {
+    width: 180px;
+}
+
 div ul li ul {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #fff;
+    padding: 10px;
+}
+
+div ul li:hover ul {
+    display: block;
 }
 
 div ul li ul li a {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
-    /* padding: 12px 14px; */
-    text-decoration: none;
-    float: left;
+    padding: 8px 5px;
+    /* margin-left: -25px; */
 }
+
+div ul li ul li a:hover {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 2px;
+    /* margin-left: -25px; */
+    /* background-color: #ccc; */
+    text-decoration: none;
+    /* float: left; */
+}
+
+
+/* end of drop down menu creation */
 
 .site-branding {
     float: left;
