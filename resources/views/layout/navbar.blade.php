@@ -4,7 +4,7 @@
 
             <!-- logo -->
             <div class="site-branding">
-                <a class="logo" href="index.html">
+                <a class="logo" href="{{ route('homepage') }}">
 
                     <!-- logo image  -->
                     <img src="{{asset('bootstrap_assets/assets/images/logo.png')}}" alt="Logo">
@@ -27,7 +27,7 @@
 
                 <!-- navigation menu -->
                 <li class="active"><a href="{{ route('homepage') }}"><span class="ion-ios-home"
-                            style="font-size: 20px;"></span></a></li>
+                            style="font-size: 16px;"></span></a></li>
                 <li><a href="{{ route('aboutus') }}">About</a></li>
                 {{-- conference menu drop down --}}
                 <li><a href="#">Conference</a>
