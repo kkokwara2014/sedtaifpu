@@ -8,7 +8,7 @@
                 <h3 class="section-title">Conference Registration</h3>
 
                 Please fill the form below to inform us of your interest in the Conference.
-                <br>
+                <br><br>
             </div>
 
         </div>
