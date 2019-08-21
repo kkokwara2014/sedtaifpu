@@ -5,9 +5,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="section-title">Registration</h3>
+                <h3 class="section-title">Conference Registration</h3>
 
                 Please fill the form below to inform us of your interest in the Conference.
+                <br>
             </div>
 
         </div>
