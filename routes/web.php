@@ -86,6 +86,6 @@ Route::post('/submit/abstract','AbstractsubmissionController@submitabstract')->n
 
 Route::get('/email', function(){
     Mail::send('email.contactus',['name'=>'KKOKWARA'], function($message){
-        $message->to('kkokwara2014','KK')->from('kkokwara2014@gmail.com')->subject('Welcome');
+        $message->to('kkokwara2014@gmail.com','KK')->subject('Welcome!');
     });
 });
