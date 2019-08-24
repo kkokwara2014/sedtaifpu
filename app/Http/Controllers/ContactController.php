@@ -62,9 +62,9 @@ class ContactController extends Controller
             'themessage'=>$request->themessage,
         );
 
-        Mail::to($request->senderemail)->send(new ContactMailSender($data));
+        Mail::to($request->senderemail)->send((new ContactMailSender($data))->delay(10));
 
-        return redirect()->back()->with('success', 'Your message has been sent successfully!');
+        return back()->with('success', 'Your message has been sent successfully!');
     }
 
     /**
