@@ -15,7 +15,7 @@ class CreateFullpapersubmissionsTable extends Migration
     {
         Schema::create('fullpapersubmissions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('paperref');
+            $table->string('fullpaper_ref');
             $table->string('leadauthor');
             $table->string('email');
             $table->text('coauthors');

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-6">
-                <p class="site-info" style="text-align: left"> &copy; 2019 sedtaifpu.org </p>
+                <p class="site-info" style="text-align: left"> &copy; 2018 - {{ Carbon\carbon::now()->year }} sedtaifpu.org </p>
             </div>
             <div class="col-md-6 col-lg-6">
                 <p style="text-align: right">Designed by Done-Right Systems Inc.</p>

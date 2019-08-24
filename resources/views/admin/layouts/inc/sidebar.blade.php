@@ -22,42 +22,18 @@
       </li>
 
       {{-- contact area --}}
-      <li class="treeview">
+      <li>
         <a href="{{ route('admin.contact.all') }}">
           <i class="fa fa-envelope-o"></i><span> Contact</span>
         </a>
       </li>
-
-      {{-- Editor area --}}
+      {{-- conference committee --}}
       <li>
-        <a href="{{ route('admin.editor.all') }}">
-          <i class="fa fa-user"></i><span> Editor</span>
+        <a href="{{ route('admin.confcommittee.all') }}">
+          <i class="fa fa-user-circle-o"></i><span> Conference Committee</span>
         </a>
       </li>
 
-      {{-- submitted paper area --}}
-      <li class="treeview">
-      <a href="{{ route('admin.submittedpaper.all') }}">
-          <i class="fa fa-file-pdf-o"></i>
-          <span>Submitted Paper</span>
-        </a>
-      </li>
-
-      {{-- future conference area --}}
-      <li class="treeview">
-      <a href="{{ route('admin.conference.all') }}">
-          <i class="fa fa-bullhorn"></i>
-          <span>Future Conference</span>
-        </a>
-      </li>
-
-      <!-- the Admin links-->
-      <li class="treeview">
-        <a href="#">
-          <i class="fa fa-users"></i>
-          <span>Admins</span>
-        </a>
-      </li>
     </ul>
   </section>
   <!-- /.sidebar -->

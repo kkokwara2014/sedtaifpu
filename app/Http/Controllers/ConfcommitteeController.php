@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Confcommittee;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,9 @@ class ConfcommitteeController extends Controller
      */
     public function index()
     {
-        //
+        $pageTitle='All Conference Committee';
+        $confcommittees = Confcommittee::orderBy('created_at','desc')->get();
+        return view('admin.confcommittee.index', compact('pageTitle','confcommittees'));
     }
 
     /**
@@ -24,7 +27,8 @@ class ConfcommitteeController extends Controller
      */
     public function create()
     {
-        //
+        $pageTitle='Add Committee Member';
+        return view('admin.confcommittee.create',compact('pageTitle'));
     }
 
     /**
@@ -35,7 +39,28 @@ class ConfcommitteeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required',
+            'name' => 'required',
+            'designation' => 'required',
+            'institution' => 'required',
+            'phone' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $confcommittee = new Confcommittee;
+
+        $confcommittee->title = $request->title;
+        $confcommittee->name = $request->name;
+        $confcommittee->designation = $request->designation;
+        $confcommittee->institution = $request->institution;
+        $confcommittee->phone = $request->phone;
+        $confcommittee->email = $request->email;
+
+        $confcommittee->save();
+
+        return redirect(route('admin.confcommittee.all'))->with('success', 'Committee Member created successfully!');
+        // ->back()->with('success', 'Your message has been sent successfully!');
     }
 
     /**

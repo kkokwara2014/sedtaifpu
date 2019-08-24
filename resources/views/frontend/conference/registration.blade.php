@@ -18,62 +18,110 @@
                 {{-- <div class="col-md-12" id="registration-msg" style="display:none;">
                     <div class="alert"></div>
                 </div> --}}
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname"
+                        <label for="">Nature of Participation</label>
+                        <select class="form-control" name="natureofparti" required>
+                            <option selected="disabled">Select Nature of Participation</option>
+                            <option>Academician</option>
+                            <option>Industrialist</option>
+                            <option>Scientist</option>
+                            <option>Student</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Name of Participant</label>
+                        <input type="text" class="form-control" placeholder="Full Name" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Gender</label>
+                        <select class="form-control" name="gender" required>
+                            <option selected="disabled">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Designation</label>
+                        <input type="text" class="form-control" placeholder="Your Designation" name="designation"
                             required>
                     </div>
-
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname"
+                        <label for="">Department</label>
+                        <input type="text" class="form-control" placeholder="Your Department" name="department"
                             required>
                     </div>
-
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
+                        <label for="">Organization</label>
+                        <input type="text" class="form-control" placeholder="Your Organization" name="organization"
+                            required>
                     </div>
                     <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Address" id="address" name="address"
-                                required>
-                        </div>
-    
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
-                        </div>
-    
-                        <div class="form-group">
-                            <select class="form-control" name="city" id="city" required>
-                                <option readonly>City</option>
-                                <option>City Name 1</option>
-                                <option>City Name 2</option>
-                                <option>City Name 3</option>
-                                <option>City Name 4</option>
-                            </select>
-                        </div>
-    
-                        <div class="form-group">
-                            <select class="form-control" name="program" id="program" required>
-                                <option readonly>Select Your Program</option>
-                                <option>Program Name 1</option>
-                                <option>Program Name 2</option>
-                                <option>Program Name 3</option>
-                            </select>
-                        </div>
+                        <label for="">Correspondence Address</label>
+                        <input type="text" class="form-control" placeholder="Your Correspondence Address" name="address"
+                            required>
+                    </div>
                 </div>
 
-                {{-- <div class="col-sm-6">
-                    
-                </div> --}}
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="">Country</label>
+                        <select class="form-control" name="city" id="city" required>
+                            <option selected="disabled">Select Country</option>
+                            <option>Nigeria</option>
+                            <option>USA</option>
+                            <option>UK</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input type="tel" class="form-control" placeholder="Phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Your Email Address" name="email" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="">Paper Title</label>
+                        <input type="text" class="form-control" placeholder="Paper Title" name="papertitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Participation</label>
+                        <select class="form-control" name="participation" required>
+                            <option selected="disabled">Select Participation</option>
+                            <option>Author</option>
+                            <option>Delegate</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mode of Presentation</label>
+                        <select class="form-control" name="modeofpresent" required>
+                            <option selected="disabled">Select Mode of Presentation</option>
+                            <option>Oral</option>
+                            <option>Microsoft Powerpoint</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Accommodation Required?</label>
+                        <select class="form-control" name="accommodation" required>
+                            <option selected="disabled">Do you need Accommodation?</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <div class="text-left">
-                <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
+                <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit Details</button>
             </div>
         </form>
     </div>
 </section>
-    
+
 @endsection

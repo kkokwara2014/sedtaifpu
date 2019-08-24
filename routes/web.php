@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,34 +12,47 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-
 Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
     Route::get('/','AdminController@index')->name('admin.index');
-    // Route::get('/editor/all','EditorialController@index')->name('admin.editor.all');
-    // Route::get('/create/editor','EditorialController@create')->name('admin.create.editor');
-    // Route::get('/save/editor','EditorialController@store')->name('admin.store.editor');
+    
 
-    // Route::get('/contact/all','ContactController@index')->name('admin.contact.all');
-
-
-    // Route::get('/conference/all','ConferenceController@index')->name('admin.conference.all');
-
-
-    // Route::get('/submitted_paper/all','PaperController@index')->name('admin.submittedpaper.all');
+    Route::get('/contact/all','ContactController@index')->name('admin.contact.all');
+    
+    Route::get('/conf_committee/all','ConfcommitteeController@index')->name('admin.confcommittee.all');
+    Route::get('/conf_committee/create','ConfcommitteeController@create')->name('admin.confcommittee.create');
+    Route::post('/conf_committee/create','ConfcommitteeController@store')->name('admin.confcommittee.store');
 });
 
+
+
+// Auth::routes();
+// Authentication Routes...
+$this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
+$this->post('login', 'Auth\LoginController@login');
+$this->post('logout', 'Auth\LoginController@logout')->name('logout');
+
+// Password Reset Routes...
+$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+$this->post('password/reset', 'Auth\ResetPasswordController@reset');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/','FrontendController@index')->name('homepage');
 Route::get('about','FrontendController@about')->name('aboutus');
 Route::get('faq','FrontendController@faq')->name('faq');
-Route::get('contact','ContactController@contact')->name('contactus');
+
+
+
+
 
 Route::group(['prefix'=>'conference'],function(){
     Route::get('/themes','ConferenceController@themes')->name('conf.themes');
@@ -49,13 +63,21 @@ Route::group(['prefix'=>'conference'],function(){
     Route::get('/registration','ConferenceController@registration')->name('conf.registration');
     Route::get('/schedule','ConferenceController@schedule')->name('conf.schedule');
     Route::get('/paymentdetails','ConferenceController@paymentdetails')->name('conf.paymentdetails');
+    
+   
 });
-
 Route::group(['prefix'=>'download'],function(){
     Route::get('/abstract/template','DownloadController@abstracttemplate')->name('download.abstract');
     Route::get('/fullpaper/template','DownloadController@fullpapertemplate')->name('download.fullpaper');
+   
 });
 
-Auth::routes();
+Route::get('contact','ContactController@create')->name('contactus');
+Route::post('contact','ContactController@store')->name('submit.contactus');
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('submit/fullpaper','FullpapersubmissionController@showsubmissionpage')->name('show.submit.page');
+Route::post('/submit/fullpaper','FullpapersubmissionController@submitpaper')->name('submit.paper');
+
+Route::get('submit/asbtract','AbstractsubmissionController@showsubmissionpage')->name('show.submit.abstract.page');
+Route::post('/submit/abstract','AbstractsubmissionController@submitabstract')->name('submit.abstract');

@@ -52,8 +52,8 @@
                 {{-- submit paper menu drop down --}}
                 <li><a href="#">Submit Paper</a>
                     <ul>
-                        <li><a href="#">Abstract</a></li>
-                        <li><a href="#">Full Paper</a></li>
+                    <li><a href="{{ route('show.submit.abstract.page') }}">Abstract</a></li>
+                    <li><a href="{{ route('show.submit.page') }}">Full Paper</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('faq') }}">FAQ</a></li>
