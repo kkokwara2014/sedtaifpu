@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-    Dear {{ $data['sender'] }},<br>
+    Dear {{ $name }},<br>
     We sincerely appreciate your enquiry which you have made recently on us. <br>
     We shall get back to your shortly. <br><br>
     

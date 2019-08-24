@@ -1,4 +1,6 @@
 <?php
+
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -81,3 +83,9 @@ Route::post('/submit/fullpaper','FullpapersubmissionController@submitpaper')->na
 
 Route::get('submit/asbtract','AbstractsubmissionController@showsubmissionpage')->name('show.submit.abstract.page');
 Route::post('/submit/abstract','AbstractsubmissionController@submitabstract')->name('submit.abstract');
+
+Route::get('/email', function(){
+    Mail::send('email.contactus',['name'=>'KKOKWARA'], function($message){
+        $message->to('kkokwara2014','KK')->from('kkokwara2014@gmail.com')->subject('Welcome');
+    });
+});
