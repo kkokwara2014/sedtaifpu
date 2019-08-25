@@ -26,7 +26,20 @@ class AdminController extends Controller
     }
 
     public function update(Request $request, $id){
+        $this->validate($request,[
+            'name'=>'required|string',
+            'email'=>'required|string|email',
+            // 'password'=>'required|string|min:6',
+        ]);
 
+        $newUser=User::find($id);
+        $newUser->name=$request->name;
+        $newUser->email=$request->email;
+        // $newUser->password=bcrypt($request->password);
+
+        $newUser->save();
+       
+        return redirect(route('admin.admins.all'));
     }
 
     public function destroy($id){
