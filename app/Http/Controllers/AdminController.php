@@ -11,4 +11,11 @@ class AdminController extends Controller
         $pageTitle='Dashboard';
         return view('admin.index',compact('pageTitle'));
     }
+
+    public function create(){
+        $pageTitle='Add New Admin';
+        return view('admin.create',compact('pageTitle'));
+    }
+
+
 }
