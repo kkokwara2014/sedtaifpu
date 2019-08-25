@@ -31,7 +31,8 @@
                                 <th>Institution</th>
                                 <th>Phone</th>
                                 <th>Email</th>
-                                <th>Action</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,6 +44,9 @@
                                 <td>{{ $confcom->phone }}</td>
                                 <td>{{ $confcom->email }}</td>
 
+                                <td>
+                                    <a href="#"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
+                                </td>
                                 <td><a href="#"><span class="fa fa-trash fa-2x text-danger"></span></a></td>
                             </tr>
                             @endforeach
@@ -54,7 +58,8 @@
                                 <th>Institution</th>
                                 <th>Phone</th>
                                 <th>Email</th>
-                                <th>Action</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
                             </tr>
                         </tfoot>
                     </table>
