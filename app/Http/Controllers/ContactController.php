@@ -56,9 +56,9 @@ class ContactController extends Controller
 
         $themsg->save();
 
-        Mail::to($request->senderemail)->send(new ContactMailSender($request->sender,$request->themessage));
+        // Mail::to($request->senderemail)->send(new ContactMailSender($request->sender,$request->themessage));
 
-        die('mail sent!');
+        // die('mail sent!');
 
         return back()->with('success', 'Your message has been sent successfully!');
     }
