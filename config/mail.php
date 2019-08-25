@@ -1,6 +1,6 @@
 <?php
 
-// return [
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -16,7 +16,7 @@
     |
     */
 
-    // 'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@
     |
     */
 
-    // 'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@
     |
     */
 
-    // 'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,10 @@
     |
     */
 
-    // 'from' => [
-    //     'address' => env('MAIL_FROM_ADDRESS', 'kkokwara2014@gmail.com'),
-    //     'name' => env('MAIL_FROM_NAME', 'Kalu Kalu Okwara'),
-    // ],
+    'from' => [
+        'address' => env('MAIL_FROM_ADDRESS', 'kkokwara2014@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Kalu Kalu Okwara'),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@
     |
     */
 
-    // 'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@
     |
     */
 
-    // 'username' => env('MAIL_USERNAME'),
+    'username' => env('MAIL_USERNAME'),
 
-    // 'password' => env('MAIL_PASSWORD'),
+    'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
@@ -99,7 +99,7 @@
     |
     */
 
-    // 'sendmail' => '/usr/sbin/sendmail -bs',
+    'sendmail' => '/usr/sbin/sendmail -bs',
 
     /*
     |--------------------------------------------------------------------------
@@ -112,15 +112,15 @@
     |
     */
 
-    // 'pretend'=>false,
+    'pretend'=>false,
 
-    // 'markdown' => [
-    //     'theme' => 'default',
+    'markdown' => [
+        'theme' => 'default',
 
-    //     'paths' => [
-    //         resource_path('views/vendor/mail'),
-    //     ],
-    // ],
+        'paths' => [
+            resource_path('views/vendor/mail'),
+        ],
+    ],
 
 //     'stream' => [
 //         'ssl' => [
@@ -130,39 +130,5 @@
 //         ],
 //     ]
 
-// ];
+];
 
-return [
-
-    'driver' => env('MAIL_DRIVER', 'smtp'),
-    
-    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
-    
-    'port' => env('MAIL_PORT', 465),
-    
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'kkokwara2014@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Kalu Kalu Okwara'),
-    ],
-    
-    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
-    
-    'username' => env('MAIL_USERNAME'),
-    
-    'password' => env('MAIL_PASSWORD'),
-    
-    
-    'sendmail' => '/usr/sbin/sendmail -t',
-    
-    'markdown' => [
-        'theme' => 'default',
-    
-        'paths' => [
-            resource_path('views/vendor/mail'),
-        ],
-    ],
-    
-    'log_channel' => env('MAIL_LOG_CHANNEL'),
-
-    'pretend' => false,
-    ];
