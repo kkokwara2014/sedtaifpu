@@ -27,7 +27,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
     Route::get('/create/new','AdminController@create')->name('admin.admins.create');
     Route::post('/create/new','AdminController@store')->name('admin.admins.store');
     Route::get('/edit/{id}','AdminController@edit')->name('admin.admins.edit');
-    Route::get('/update/{id}','AdminController@update')->name('admin.admins.update');
+    Route::match(['put', 'patch'],'update/{id}','AdminController@update')->name('admin.admins.update');
+
     
 
     Route::get('/contact/all','ContactController@index')->name('admin.contact.all');
