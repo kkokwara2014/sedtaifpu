@@ -21,6 +21,11 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
     Route::get('/','AdminController@index')->name('admin.index');
+
+    // creating new admin
+    Route::get('/all','AdminController@allAdmins')->name('admin.admins.all');
+    Route::get('/create/new','AdminController@create')->name('admin.admins.create');
+    Route::post('/create/new','AdminController@store')->name('admin.admins.store');
     
 
     Route::get('/contact/all','ContactController@index')->name('admin.contact.all');

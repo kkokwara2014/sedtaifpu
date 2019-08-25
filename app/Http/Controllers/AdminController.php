@@ -16,6 +16,10 @@ class AdminController extends Controller
         $pageTitle='Add New Admin';
         return view('admin.create',compact('pageTitle'));
     }
+    public function allAdmins(){
+        $pageTitle='All Admins';
+        return view('admin.alladmins',compact('pageTitle'));
+    }
 
 
 }

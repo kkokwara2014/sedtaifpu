@@ -33,6 +33,12 @@
           <i class="fa fa-user-circle-o"></i><span> Conference Committee</span>
         </a>
       </li>
+      {{-- conference committee --}}
+      <li>
+        <a href="{{ route('admin.admins.all') }}">
+          <i class="fa fa-users"></i><span> Admins</span>
+        </a>
+      </li>
 
     </ul>
   </section>
