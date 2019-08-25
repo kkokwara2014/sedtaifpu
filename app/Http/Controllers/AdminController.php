@@ -17,17 +17,19 @@ class AdminController extends Controller
         $pageTitle='Add New Admin';
         return view('admin.users.create',compact('pageTitle'));
     }
+
     public function allAdmins(){
         $pageTitle='All Admins';
-        return view('admin.users.alladmins',compact('pageTitle'));
+        $admins=User::orderBy('created_at','desc')->get();
+        return view('admin.users.alladmins',compact('pageTitle','admins'));
     }
-    
+
     public function store(Request $request){
 
         $this->validate($request,[
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'password'=>$request->password,
+            'name'=>'required|string',
+            'email'=>'required|string|email',
+            'password'=>'required|string|min:6',
         ]);
 
         $newUser=new User;

@@ -19,43 +19,35 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Sender</th>
+                                <th>Name</th>
                                 <th>Email</th>
-                                <th>Message</th>
+                                <th>Created</th>
                                 <th>Edit</th>
                                 <th>Remove</th>
                             </tr>
                         </thead>
                         <tbody>
-
+                            @foreach ($admins as $admin)
+                                
                             <tr>
-                                <td>Gecko</td>
-                                <td>Firefox 1.5</td>
-                                <td>Win 98+ / OSX.2+</td>
+                                <td>{{ $admin->name }}</td>
+                                <td>{{ $admin->email }}</td>
+                                <td>{{ $admin->created_at }}</td>
                                 <td>
-                                    <a href="#"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
+                                <a href="{{ route('edit/',$admin->id) }}"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
                                 </td>
                                 <td><a href="#"><span class="fa fa-trash fa-2x text-danger"></span></a></td>
-
                             </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>Firefox 2.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>
-                                    <a href="#"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
-                                </td>
-                                <td><a href="#"><span class="fa fa-trash fa-2x text-danger"></span></a></td>
+                            @endforeach
 
-                            </tr>
-
+                            
 
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Sender</th>
+                                <th>Name</th>
                                 <th>Email</th>
-                                <th>Message</th>
+                                <th>Created</th>
                                 <th>Edit</th>
                                 <th>Remove</th>
                             </tr>
