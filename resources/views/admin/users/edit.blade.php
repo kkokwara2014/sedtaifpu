@@ -17,24 +17,25 @@
                 </div> --}}
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <form action="{{ route('admin.admins.store') }}" method="post">
+                    <form action="{{ route('admin.admins.update',$admins->id) }}" method="post">
                         {{ csrf_field() }}
+                        {{ method_field('PUT') }}
                         
                         <div class="form-group">
                             <label for="">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Full Name" name="name">
+                        <input type="text" class="form-control" placeholder="Full Name" name="name" value="{{$admins->name}}">
                         </div>
                         
                         <div class="form-group">
                             <label for="">Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address" name="email">
+                            <input type="email" class="form-control" placeholder="Email Address" name="email" value="{{$admins->email}}">
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="">Password</label>
-                            <input type="password" class="form-control" placeholder="Password" name="password">
-                        </div>
+                            <input type="password" class="form-control" placeholder="Password" name="password" value="{{$admins->password}}">
+                        </div> --}}
                         
-                        <button type="submit" class="btn btn-primary btn-sm">Create</button>
+                        <button type="submit" class="btn btn-primary btn-sm">Update</button>
                         <a href="{{ route('admin.admins.all') }}" class="btn btn-danger btn-sm">Cancel</a>
                     </form>
                 </div>

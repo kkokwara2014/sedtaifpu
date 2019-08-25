@@ -34,7 +34,7 @@
                                 <td>{{ $admin->email }}</td>
                                 <td>{{ $admin->created_at }}</td>
                                 <td>
-                                <a href="{{ route('edit/',$admin->id) }}"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
+                                <a href="{{ route('admin.admins.edit',$admin->id) }}"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
                                 </td>
                                 <td><a href="#"><span class="fa fa-trash fa-2x text-danger"></span></a></td>
                             </tr>

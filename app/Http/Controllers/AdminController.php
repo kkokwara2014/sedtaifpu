@@ -18,6 +18,22 @@ class AdminController extends Controller
         return view('admin.users.create',compact('pageTitle'));
     }
 
+    public function edit($id){
+        $pageTitle='Edit Admin';
+
+        $admins=User::where('id',$id)->first();
+        return view('admin.users.edit',compact('pageTitle','admins'));
+    }
+
+    public function update(Request $request, $id){
+
+    }
+
+    public function destroy($id){
+        $admins=User::where('id',$id)->delete();
+        return redirect()->back();
+    }
+
     public function allAdmins(){
         $pageTitle='All Admins';
         $admins=User::orderBy('created_at','desc')->get();
