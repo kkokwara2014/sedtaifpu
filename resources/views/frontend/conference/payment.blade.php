@@ -65,22 +65,51 @@
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
                                     aria-labelledby="headingTwo">
                                     <div class="panel-body">Payment Category</div>
-                                    
+                                    <table class="table table-responsive table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Category</th>
+                                                <th scope="col">Conference Fee</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Research Scholars </td>
+                                                <td>&#8358;15,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Academics/Scientists </td>
+                                                <td>&#8358;15,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Industrial Participants</td>
+                                                <td>&#8358;20,000.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
-
+                
+                <b style="color:red">*</b> Please mention your name in the Remarks column while transferring money online.
             </div>
 
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-10">
 
-            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-11">
+               
         </div>
+    </div>
 </section>
 @endsection
