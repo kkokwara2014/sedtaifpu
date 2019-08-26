@@ -77,9 +77,9 @@
 
         <h1>National Conference SEDT-2019</h1>
 
-        {{-- <p>First &amp; Largest Conference</p> --}}
+        {{-- National Conference SEDT-2019 --}}
 
-        <a class="btn btn-white" href="#registration">Register Now</a>
+        <a class="btn btn-white" href="{{ route('conf.registration') }}">Register Now</a>
 
     </div>
 </header>

@@ -22,7 +22,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
     Route::get('/','AdminController@index')->name('admin.index');
 
-    // creating new admin
+    // Handling all about the Admins
     Route::get('/all','AdminController@allAdmins')->name('admin.admins.all');
     Route::get('/create/new','AdminController@create')->name('admin.admins.create');
     Route::post('/create/new','AdminController@store')->name('admin.admins.store');
@@ -70,7 +70,7 @@ Route::group(['prefix'=>'conference'],function(){
     Route::get('/keyspeakers','ConferenceController@keyspeakers')->name('conf.keyspeakers');
     Route::get('/callforpaper','ConferenceController@callforpaper')->name('conf.callforpaper');
     Route::get('/location','ConferenceController@location')->name('conf.location');
-    Route::get('/registration','ConferenceController@registration')->name('conf.registration');
+    Route::get('/registration','ConfregController@create')->name('conf.registration');
     Route::get('/schedule','ConferenceController@schedule')->name('conf.schedule');
     Route::get('/paymentdetails','ConferenceController@paymentdetails')->name('conf.paymentdetails');
     

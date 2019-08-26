@@ -35,11 +35,11 @@ class ConferenceController extends Controller
         return view('frontend.conference.location', compact('title'));
     }
 
-    public function registration()
-    { 
-        $title='Conference Registration';
-        return view('frontend.conference.registration', compact('title'));
-    }
+    // public function registration()
+    // { 
+    //     $title='Conference Registration';
+    //     return view('frontend.conference.registration', compact('title'));
+    // }
 
     public function schedule()
     { 

@@ -68,12 +68,11 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="">Country</label>
-                        <select class="form-control" name="city" id="city" required>
+                        <select class="form-control" name="country_id">
                             <option selected="disabled">Select Country</option>
-                            <option>Nigeria</option>
-                            <option>USA</option>
-                            <option>UK</option>
-
+                            @foreach ($countries as $country)
+                            <option value="{{$country->id}}">{{$country->name}}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="form-group">
