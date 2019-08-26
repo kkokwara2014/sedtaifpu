@@ -17,10 +17,10 @@ class CreateConfcommitteesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('name');
-            $table->text('designation');
-            $table->text('institution');
-            $table->string('phone');
-            $table->string('email');
+            $table->text('designation')->nullable();
+            $table->text('institution')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }

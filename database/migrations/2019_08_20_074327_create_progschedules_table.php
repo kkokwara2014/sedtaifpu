@@ -17,11 +17,11 @@ class CreateProgschedulesTable extends Migration
             $table->increments('id');
             $table->text('tasktitle');
             $table->text('namewithtitle');
-            $table->text('designation');
-            $table->text('portfolio');
-            $table->text('organization');
-            $table->string('scheduledate');
-            $table->string('scheduletime');
+            $table->text('designation')->nullable();
+            $table->text('portfolio')->nullable();
+            $table->text('organization')->nullable();
+            $table->string('scheduledate')->nullable();
+            $table->string('scheduletime')->nullable();
             $table->timestamps();
         });
     }

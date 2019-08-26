@@ -14,7 +14,7 @@
 
         </div>
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-12 col-lg-12">
                 @include('messages.success')
             </div>
         </div>
@@ -22,7 +22,6 @@
 
         <form action="{{ route('conf.registration.store') }}" method="POST">
             {{ csrf_field() }}
-
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">

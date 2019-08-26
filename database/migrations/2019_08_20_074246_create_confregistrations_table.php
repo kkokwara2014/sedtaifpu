@@ -19,9 +19,9 @@ class CreateConfregistrationsTable extends Migration
             $table->string('natureofparti');
             $table->text('fullname');
             $table->text('gender');
-            $table->text('designation');
-            $table->text('department');
-            $table->text('organization');
+            $table->text('designation')->nullable();
+            $table->text('department')->nullable();
+            $table->text('organization')->nullable();
             $table->text('address');
             $table->integer('country_id');
             $table->string('phone');

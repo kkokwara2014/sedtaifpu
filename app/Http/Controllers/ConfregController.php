@@ -46,7 +46,7 @@ class ConfregController extends Controller
             'gender'=>'required',
             'organization'=>'required',
             'address'=>'required',
-            'country'=>'required',
+            'country_id'=>'required',
             'phone'=>'required',
             'email'=>'required|email',
             'papertitle'=>'required',
@@ -56,6 +56,7 @@ class ConfregController extends Controller
         ]);
 
         $confreg=new Confregistration;
+
         $confreg->confreg_ref='NCESWD' . date('Y') . '_REG-' . rand(22050, 55509);
         $confreg->natureofparti=$request->natureofparti;
         $confreg->fullname=$request->fullname;
@@ -74,7 +75,7 @@ class ConfregController extends Controller
         
         $confreg->save();
 
-        return back()->with('success','Your registration details with ref: '. $confreg->confreg_ref.' have been sent!');
+        return redirect()->route('conf.registration')->with('success','Your registration detail with ref: '. $confreg->confreg_ref.' has been sent successfully!');
     }
 
     /**

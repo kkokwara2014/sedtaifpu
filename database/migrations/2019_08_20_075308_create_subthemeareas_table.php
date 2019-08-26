@@ -15,7 +15,7 @@ class CreateSubthemeareasTable extends Migration
     {
         Schema::create('subthemeareas', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('title');
+            $table->text('title')->nullable();
             $table->integer('subtheme_id');
             $table->timestamps();
         });

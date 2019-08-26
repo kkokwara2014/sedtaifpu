@@ -18,8 +18,8 @@ class CreateFullpapersubmissionsTable extends Migration
             $table->string('fullpaper_ref');
             $table->string('leadauthor');
             $table->string('email');
-            $table->text('coauthors');
-            $table->string('phone');
+            $table->text('coauthors')->nullable();
+            $table->string('phone')->nullable();
             $table->integer('country_id');
             $table->text('papertitle');
             $table->text('filename');
