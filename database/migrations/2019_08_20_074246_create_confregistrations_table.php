@@ -17,7 +17,7 @@ class CreateConfregistrationsTable extends Migration
             $table->increments('id');
             $table->string('confreg_ref');
             $table->string('natureofparti');
-            $table->text('nameofparti');
+            $table->text('fullname');
             $table->text('gender');
             $table->text('designation');
             $table->text('department');
@@ -28,7 +28,8 @@ class CreateConfregistrationsTable extends Migration
             $table->string('email');
             $table->text('papertitle');
             $table->string('participation');
-            $table->string('presentationmode');
+            $table->string('modeofpresent');
+            $table->string('accommodation');
             $table->timestamps();
         });
     }

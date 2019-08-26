@@ -56,9 +56,25 @@ class ConfregController extends Controller
         ]);
 
         $confreg=new Confregistration;
+        $confreg->confreg_ref='NCESWD' . date('Y') . '_REG-' . rand(22050, 55509);
+        $confreg->natureofparti=$request->natureofparti;
+        $confreg->fullname=$request->fullname;
+        $confreg->gender=$request->gender;
+        $confreg->designation=$request->designation;
+        $confreg->department=$request->department;
+        $confreg->organization=$request->organization;
+        $confreg->address=$request->address;
+        $confreg->country_id=$request->country_id;
+        $confreg->phone=$request->phone;
+        $confreg->email=$request->email;
+        $confreg->papertitle=$request->papertitle;
+        $confreg->participation=$request->participation;
+        $confreg->modeofpresent=$request->modeofpresent;
+        $confreg->accommodation=$request->accommodation;
         
+        $confreg->save();
 
-        return back()->with('success','Your registration details have been sent!');
+        return back()->with('success','Your registration details with ref: '. $confreg->confreg_ref.' have been sent!');
     }
 
     /**

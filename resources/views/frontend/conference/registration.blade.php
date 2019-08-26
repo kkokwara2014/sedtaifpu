@@ -13,6 +13,12 @@
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-md-10">
+                    @include('messages.success')
+            </div>
+        </div>
+        <br>
 
         <form action="#" method="POST">
             {{ csrf_field() }}
