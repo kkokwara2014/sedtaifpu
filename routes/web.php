@@ -71,6 +71,7 @@ Route::group(['prefix'=>'conference'],function(){
     Route::get('/callforpaper','ConferenceController@callforpaper')->name('conf.callforpaper');
     Route::get('/location','ConferenceController@location')->name('conf.location');
     Route::get('/registration','ConfregController@create')->name('conf.registration');
+    Route::post('/registration','ConfregController@store')->name('conf.registration.store');
     Route::get('/schedule','ConferenceController@schedule')->name('conf.schedule');
     Route::get('/paymentdetails','ConferenceController@paymentdetails')->name('conf.paymentdetails');
     

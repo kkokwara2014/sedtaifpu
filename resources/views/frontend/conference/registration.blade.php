@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <h3 class="section-title">Conference Registration</h3>
 
-                Please fill the form below to inform us of your interest in the Conference. Compulsory fields are 
+                Please fill the form below to inform us of your interest in the Conference. Compulsory fields are
                 marked with esterisk <b style="color: red">*</b>
                 <br><br>
             </div>
@@ -15,19 +15,19 @@
         </div>
         <div class="row">
             <div class="col-md-10">
-                    @include('messages.success')
+                @include('messages.success')
             </div>
         </div>
         <br>
 
-        <form action="#" method="POST">
+        <form action="{{ route('conf.registration.store') }}" method="POST">
             {{ csrf_field() }}
 
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="">Nature of Participation <b style="color: red">*</b></label>
-                        <select class="form-control" name="natureofparti" required>
+                        <select class="form-control" name="natureofparti">
                             <option selected="disabled">Select Nature of Participation</option>
                             <option>Academician</option>
                             <option>Industrialist</option>
@@ -38,11 +38,11 @@
                     </div>
                     <div class="form-group">
                         <label for="">Name of Participant <b style="color: red">*</b></label>
-                        <input type="text" class="form-control" placeholder="Full Name" name="fullname" required>
+                        <input type="text" class="form-control" placeholder="Full Name" name="fullname">
                     </div>
                     <div class="form-group">
                         <label for="">Gender <b style="color: red">*</b></label>
-                        <select class="form-control" name="gender" required>
+                        <select class="form-control" name="gender">
                             <option selected="disabled">Select Gender</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -51,23 +51,20 @@
 
                     <div class="form-group">
                         <label for="">Designation</label>
-                        <input type="text" class="form-control" placeholder="Your Designation" name="designation"
-                            required>
+                        <input type="text" class="form-control" placeholder="Your Designation" name="designation">
                     </div>
                     <div class="form-group">
                         <label for="">Department</label>
-                        <input type="text" class="form-control" placeholder="Your Department" name="department"
-                            required>
+                        <input type="text" class="form-control" placeholder="Your Department" name="department">
                     </div>
                     <div class="form-group">
                         <label for="">Organization</label>
-                        <input type="text" class="form-control" placeholder="Your Organization" name="organization"
-                            required>
+                        <input type="text" class="form-control" placeholder="Your Organization" name="organization">
                     </div>
                     <div class="form-group">
                         <label for="">Correspondence Address <b style="color: red">*</b></label>
-                        <input type="text" class="form-control" placeholder="Your Correspondence Address" name="address"
-                            required>
+                        <input type="text" class="form-control" placeholder="Your Correspondence Address"
+                            name="address">
                     </div>
                 </div>
 
@@ -83,7 +80,7 @@
                     </div>
                     <div class="form-group">
                         <label for="">Phone <b style="color: red">*</b></label>
-                        <input type="tel" class="form-control" placeholder="Phone" name="phone">
+                        <input type="tel" class="form-control" placeholder="Phone" name="phone" maxlength="11">
                     </div>
                     <div class="form-group">
                         <label for="">Email Address <b style="color: red">*</b></label>

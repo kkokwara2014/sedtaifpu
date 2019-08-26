@@ -41,18 +41,18 @@ class ConfregController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'natureofparti'=>'required|string',
-            'fullname'=>'required|string',
-            'gender'=>'required|string',
-            'organization'=>'required|string',
-            'address'=>'required|string',
-            'country'=>'required|string',
+            'natureofparti'=>'required',
+            'fullname'=>'required',
+            'gender'=>'required',
+            'organization'=>'required',
+            'address'=>'required',
+            'country'=>'required',
             'phone'=>'required',
             'email'=>'required|email',
-            'papertitle'=>'required|string',
-            'participation'=>'required|string',
-            'modeofpresent'=>'required|string',
-            'accommodation'=>'required|string',
+            'papertitle'=>'required',
+            'participation'=>'required',
+            'modeofpresent'=>'required',
+            'accommodation'=>'required',
         ]);
 
         $confreg=new Confregistration;
