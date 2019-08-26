@@ -40,16 +40,27 @@ class ConfregController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        // $this->validate($request, [
+        //     'natureofparti'=>'required',
+        //     'fullname'=>'required',
+        //     'gender'=>'required',
+        //     'address'=>'required',
+        //     'country_id'=>'required',
+        //     'phone'=>'required|regex:/(01)[0-9]{9}/',
+        //     'email'=>'required|email',
+        //     'papertitle'=>'required',
+        //     'participation'=>'required',
+        //     'modeofpresent'=>'required',
+        //     'accommodation'=>'required',
+        // ]);
+
+        $this->validate($request,[
             'natureofparti'=>'required',
             'fullname'=>'required',
             'gender'=>'required',
-            'designation'=>'required',
-            'department'=>'required',
-            'organization'=>'required',
             'address'=>'required',
             'country_id'=>'required',
-            'phone'=>'required|regex:/(01)[0-9]{9}/',
+            'phone'=>'required',
             'email'=>'required|email',
             'papertitle'=>'required',
             'participation'=>'required',
