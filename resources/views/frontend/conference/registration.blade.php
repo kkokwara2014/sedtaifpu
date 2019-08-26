@@ -7,20 +7,20 @@
             <div class="col-md-12">
                 <h3 class="section-title">Conference Registration</h3>
 
-                Please fill the form below to inform us of your interest in the Conference.
+                Please fill the form below to inform us of your interest in the Conference. Compulsory fields are 
+                marked with esterisk <b style="color: red">*</b>
                 <br><br>
             </div>
 
         </div>
 
-        <form action="#">
+        <form action="#" method="POST">
+            {{ csrf_field() }}
+
             <div class="row">
-                {{-- <div class="col-md-12" id="registration-msg" style="display:none;">
-                    <div class="alert"></div>
-                </div> --}}
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">Nature of Participation</label>
+                        <label for="">Nature of Participation <b style="color: red">*</b></label>
                         <select class="form-control" name="natureofparti" required>
                             <option selected="disabled">Select Nature of Participation</option>
                             <option>Academician</option>
@@ -31,11 +31,11 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="">Name of Participant</label>
+                        <label for="">Name of Participant <b style="color: red">*</b></label>
                         <input type="text" class="form-control" placeholder="Full Name" name="fullname" required>
                     </div>
                     <div class="form-group">
-                        <label for="">Gender</label>
+                        <label for="">Gender <b style="color: red">*</b></label>
                         <select class="form-control" name="gender" required>
                             <option selected="disabled">Select Gender</option>
                             <option>Male</option>
@@ -59,7 +59,7 @@
                             required>
                     </div>
                     <div class="form-group">
-                        <label for="">Correspondence Address</label>
+                        <label for="">Correspondence Address <b style="color: red">*</b></label>
                         <input type="text" class="form-control" placeholder="Your Correspondence Address" name="address"
                             required>
                     </div>
@@ -67,7 +67,7 @@
 
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="">Country</label>
+                        <label for="">Country <b style="color: red">*</b></label>
                         <select class="form-control" name="country_id">
                             <option selected="disabled">Select Country</option>
                             @foreach ($countries as $country)
@@ -76,39 +76,39 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="">Phone</label>
-                        <input type="tel" class="form-control" placeholder="Phone" name="phone" required>
+                        <label for="">Phone <b style="color: red">*</b></label>
+                        <input type="tel" class="form-control" placeholder="Phone" name="phone">
                     </div>
                     <div class="form-group">
-                        <label for="">Email Address</label>
-                        <input type="email" class="form-control" placeholder="Your Email Address" name="email" required>
+                        <label for="">Email Address <b style="color: red">*</b></label>
+                        <input type="email" class="form-control" placeholder="Your Email Address" name="email">
                     </div>
 
 
                     <div class="form-group">
-                        <label for="">Paper Title</label>
-                        <input type="text" class="form-control" placeholder="Paper Title" name="papertitle" required>
+                        <label for="">Paper Title <b style="color: red">*</b></label>
+                        <input type="text" class="form-control" placeholder="Paper Title" name="papertitle">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Participation</label>
-                        <select class="form-control" name="participation" required>
+                        <label for="">Participation <b style="color: red">*</b></label>
+                        <select class="form-control" name="participation">
                             <option selected="disabled">Select Participation</option>
                             <option>Author</option>
                             <option>Delegate</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="">Mode of Presentation</label>
-                        <select class="form-control" name="modeofpresent" required>
+                        <label for="">Mode of Presentation <b style="color: red">*</b></label>
+                        <select class="form-control" name="modeofpresent">
                             <option selected="disabled">Select Mode of Presentation</option>
                             <option>Oral</option>
                             <option>Microsoft Powerpoint</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="">Accommodation Required?</label>
-                        <select class="form-control" name="accommodation" required>
+                        <label for="">Accommodation Required? <b style="color: red">*</b></label>
+                        <select class="form-control" name="accommodation">
                             <option selected="disabled">Do you need Accommodation?</option>
                             <option>Yes</option>
                             <option>No</option>
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="text-left">
-                <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit Details</button>
+                <button type="submit" class="btn btn-black">Submit Details</button>
             </div>
         </form>
     </div>

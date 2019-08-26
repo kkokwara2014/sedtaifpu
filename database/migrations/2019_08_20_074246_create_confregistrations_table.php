@@ -15,6 +15,7 @@ class CreateConfregistrationsTable extends Migration
     {
         Schema::create('confregistrations', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('confreg_ref');
             $table->string('natureofparti');
             $table->text('nameofparti');
             $table->text('gender');
