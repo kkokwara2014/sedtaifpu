@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Confcommittee;
 
 class ConferenceController extends Controller
 {
@@ -15,7 +16,8 @@ class ConferenceController extends Controller
     public function committee()
     { 
         $title='Conference Committee';
-        return view('frontend.conference.committee', compact('title'));
+        $confcommittees = Confcommittee::orderBy('created_at','asc')->get();
+        return view('frontend.conference.committee', compact('title','confcommittees'));
     }
     public function keyspeakers()
     { 

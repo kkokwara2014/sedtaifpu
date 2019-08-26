@@ -65,7 +65,7 @@
                     </table>
 
                     @else
-                    <p class="alert alert-warning">No Conference Committee Member found!</p>
+                    <p class="alert alert-warning">No Conference Committee Member has not been created!</p>
                     @endif
                 </div>
                 <!-- /.box-body -->

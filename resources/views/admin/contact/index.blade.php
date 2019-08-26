@@ -13,6 +13,7 @@
                 </div> --}}
                 <!-- /.box-header -->
                 <div class="box-body">
+                    @if (count($contacts)!=0)
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
@@ -50,6 +51,10 @@
                             </tr>
                         </tfoot>
                     </table>
+                        
+                    @else
+                    <p class="alert alert-warning">No Contact has been made!</p>
+                    @endif
                 </div>
                 <!-- /.box-body -->
             </div>
