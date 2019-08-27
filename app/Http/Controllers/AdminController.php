@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Confcommittee;
+use App\Contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
@@ -10,7 +12,10 @@ class AdminController extends Controller
 {
     public function index(){
         $pageTitle='Dashboard';
-        return view('admin.index',compact('pageTitle'));
+        $totalAdmins=User::count();
+        $totalContacts=Contact::count();
+        $totalCommittees=Confcommittee::count();
+        return view('admin.index',compact('pageTitle','totalAdmins','totalContacts','totalCommittees'));
     }
 
     public function create(){
