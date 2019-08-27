@@ -56,7 +56,7 @@
                     <li><a href="{{ route('show.submit.page') }}">Full Paper</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ route('faq') }}">FAQ</a></li>
+                {{-- <li><a href="{{ route('faq') }}">FAQ</a></li> --}}
                 <li><a href="{{ route('contactus') }}">Contact</a></li>
 
                 <!-- <li><a href="#">Sponsorship</a></li> -->
