@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Abstractsubmission;
 use App\Confcommittee;
+use App\Confregistration;
 use App\Contact;
+use App\Fullpapersubmission;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
@@ -15,7 +18,10 @@ class AdminController extends Controller
         $totalAdmins=User::count();
         $totalContacts=Contact::count();
         $totalCommittees=Confcommittee::count();
-        return view('admin.index',compact('pageTitle','totalAdmins','totalContacts','totalCommittees'));
+        $totalAbstracts=Abstractsubmission::count();
+        $totalFullPapers=Fullpapersubmission::count();
+        $totalRegistrations=Confregistration::count();
+        return view('admin.index',compact('pageTitle','totalAdmins','totalContacts','totalCommittees','totalAbstracts','totalFullPapers','totalRegistrations'));
     }
 
     public function create(){

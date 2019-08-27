@@ -58,12 +58,26 @@
           <!-- small box -->
           <div class="small-box bg-fuchsia">
             <div class="inner">
-              <h3>65</h3>
+            <h3>{{$totalAbstracts}}</h3>
 
               <p>Abstracts</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class="ion ion-ios-paper"></i>
+            </div>
+            {{-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> --}}
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <!-- small box -->
+          <div class="small-box bg-blue-active">
+            <div class="inner">
+            <h3>{{$totalFullPapers}}</h3>
+
+              <p>Full Papers</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-paper"></i>
             </div>
             {{-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> --}}
           </div>
@@ -72,26 +86,12 @@
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>65</h3>
+            <h3>{{$totalRegistrations}}</h3>
 
-              <p>Unique Visitors</p>
+              <p>Registrations</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            {{-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> --}}
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65</h3>
-
-              <p>Unique Visitors</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class="ion ion-ios-people"></i>
             </div>
             {{-- <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> --}}
           </div>

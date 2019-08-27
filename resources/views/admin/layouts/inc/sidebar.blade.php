@@ -21,6 +21,18 @@
         </a>
       </li>
 
+      {{-- Abstract area --}}
+      <li>
+        <a href="#">
+          <i class="fa fa-file-pdf-o"></i><span> Abstracts</span>
+        </a>
+      </li>
+      {{-- Full Paper area --}}
+      <li>
+        <a href="#">
+          <i class="fa fa-newspaper-o"></i><span> Full Paper</span>
+        </a>
+      </li>
       {{-- contact area --}}
       <li>
         <a href="{{ route('admin.contact.all') }}">
@@ -33,10 +45,16 @@
           <i class="fa fa-user-circle-o"></i><span> Conference Committee</span>
         </a>
       </li>
-      {{-- conference committee --}}
+      {{-- Registration Area --}}
+      <li>
+        <a href="#">
+          <i class="fa fa-users"></i><span> Registrations</span>
+        </a>
+      </li>
+      {{-- Admin Area --}}
       <li>
         <a href="{{ route('admin.admins.all') }}">
-          <i class="fa fa-users"></i><span> Admins</span>
+          <i class="fa fa-user-plus"></i><span> Admins</span>
         </a>
       </li>
 
