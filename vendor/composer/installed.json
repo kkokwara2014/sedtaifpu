@@ -1386,29 +1386,32 @@
     },
     {
         "name": "nunomaduro/collision",
-        "version": "v1.1.22",
-        "version_normalized": "1.1.22.0",
+        "version": "v2.1.1",
+        "version_normalized": "2.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nunomaduro/collision.git",
-            "reference": "236609bd5a067587f600bc55c5d683b840798b22"
+            "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nunomaduro/collision/zipball/236609bd5a067587f600bc55c5d683b840798b22",
-            "reference": "236609bd5a067587f600bc55c5d683b840798b22",
+            "url": "https://api.github.com/repos/nunomaduro/collision/zipball/b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
+            "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
             "shasum": ""
         },
         "require": {
             "filp/whoops": "^2.1.4",
+            "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
             "php": "^7.1",
             "symfony/console": "~2.8|~3.3|~4.0"
         },
         "require-dev": {
-            "laravel/framework": "5.5.*",
-            "phpunit/phpunit": "~6.5"
+            "laravel/framework": "5.7.*",
+            "nunomaduro/larastan": "^0.3.0",
+            "phpstan/phpstan": "^0.10",
+            "phpunit/phpunit": "~7.3"
         },
-        "time": "2018-02-07T10:42:20+00:00",
+        "time": "2018-11-21T21:40:54+00:00",
         "type": "library",
         "extra": {
             "laravel": {
