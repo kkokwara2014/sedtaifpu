@@ -53,7 +53,16 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "github-protocols": [
+            "https,ssh"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

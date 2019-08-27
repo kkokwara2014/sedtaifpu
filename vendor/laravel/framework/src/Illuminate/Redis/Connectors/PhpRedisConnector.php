@@ -5,10 +5,11 @@ namespace Illuminate\Redis\Connectors;
 use Redis;
 use RedisCluster;
 use Illuminate\Support\Arr;
+use Illuminate\Contracts\Redis\Connector;
 use Illuminate\Redis\Connections\PhpRedisConnection;
 use Illuminate\Redis\Connections\PhpRedisClusterConnection;
 
-class PhpRedisConnector
+class PhpRedisConnector implements Connector
 {
     /**
      * Create a new clustered PhpRedis connection.
@@ -49,7 +50,7 @@ class PhpRedisConnector
      */
     protected function buildClusterConnectionString(array $server)
     {
-        return $server['host'].':'.$server['port'].'?'.http_build_query(Arr::only($server, [
+        return $server['host'].':'.$server['port'].'?'.Arr::query(Arr::only($server, [
             'database', 'password', 'prefix', 'read_timeout',
         ]));
     }
@@ -118,6 +119,17 @@ class PhpRedisConnector
      */
     protected function createRedisClusterInstance(array $servers, array $options)
     {
+        if (version_compare(phpversion('redis'), '4.3.0', '>=')) {
+            return new RedisCluster(
+                null,
+                array_values($servers),
+                $options['timeout'] ?? 0,
+                $options['read_timeout'] ?? 0,
+                isset($options['persistent']) && $options['persistent'],
+                $options['password'] ?? null
+            );
+        }
+
         return new RedisCluster(
             null,
             array_values($servers),
