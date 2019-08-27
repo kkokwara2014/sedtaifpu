@@ -1,124 +1,49 @@
 @extends('layout.app')
 
 @section('content')
-
-<br><br><br>
-
-<section id="facts" class="section bg-image-1 facts text-center">
+<section id="about" class="section about">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-10">
 
-                <i class="ion-ios-calendar"></i>
-                <h3>2015<br>June 25</h3>
+                <h3 class="section-title">Welcome to SEDTAIFPU</h3>
+
+                <p style="text-align: justify">The National Conference on Environmental Sustainability and Wealth
+                    Creation in Development
+                    (SEDT-2019) organized by School of environmental design and technology will promoteexchange of novel
+                    thoughts and creative ideas amongst academicians, industrialists, students and research scholars.
+                    This forum will provide expression of innovative research experience as oral and power point
+                    presentation where there's freedom to discuss, debate and defend their findings to benefit all
+                    concerned. </p>
+
+                <p style="text-align: justify">
+                    <strong>
+                        Selected papers will be published in the Journal of Science, Engineering Development,
+                        Environment
+                        and Technology (JOSEDET). You can visit <a href="https://www.josedet.org"
+                            target="_blank">JOSEDET wbesite</a> for more update.
+                    </strong> <br>
+                    This conference touches on a broad range of practical issues related to environmental
+                    sustainability, including wealth creation, institution, equity, energy, trade, and ecological
+                    sustainability.
+                </p>
+                <p style="text-align: justify">
+                    Conferences on Environmental Sustainability and Wealth Creation in Development theory aims at
+                    bringing in together, professionals, professors, research scholars, researchers, students,
+                    academics, scientists so that they can thoroughly share and exchange their study and work
+                    experiences and research results related to Environmental Sustainability and Wealth Creation in
+                    Development theory. Environmental Sustainability and Wealth Creation in Development theory
+                    conferences also work as important interdisciplinary forums for decision-makers, policy analysts,
+                    representatives of nongovernmental organizations, and others interested in understanding and
+                    contributing to environmentally sustainable development and to present and discuss the most recent
+                    developments in the fields of Environmental Sustainability and Wealth Creation in Development
+                    theory.
+                </p>
 
             </div>
-            <div class="col-sm-3">
-
-                <i class="ion-ios-location"></i>
-                <h3>California<br>USA</h3>
-
-            </div>
-            <div class="col-sm-3">
-
-                <i class="ion-pricetags"></i>
-                <h3>150<br>Tickets</h3>
-
-            </div>
-            <div class="col-sm-3">
-
-                <i class="ion-speakerphone"></i>
-                <h3>06<br>Speakers</h3>
-
-            </div>
-        </div><!-- row -->
-    </div><!-- container -->
+            <div class="col-md-2"></div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
 </section>
-
-
-
-<br><br><br><br>
-
-<section id="contribution" class="section bg-image-2 contribution">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
-
-                <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give
-                    you back the weekends you worked, or erase the pain of being forced to make the logo bigger.
-                    But if you submit your best work.</p>
-
-                <a class="btn btn-white" href="#">Submit</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<br><br><br>
-
-
-{{-- <section id="photos" class="section photos">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-title">Photos</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="grid">
-
-                    <li class="grid-item grid-item-sm-6">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-1.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-2.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-3.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-5.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-6.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-7.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-8.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-2.jpg')}}">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block"
-                            src="{{asset('bootstrap_assets/assets/images/photos/photos-3.jpg')}}">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
 
 @endsection
