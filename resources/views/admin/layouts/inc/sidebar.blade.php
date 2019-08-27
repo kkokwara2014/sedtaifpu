@@ -47,7 +47,7 @@
       </li>
       {{-- Registration Area --}}
       <li>
-        <a href="#">
+        <a href="{{ route('admin.conf.reg') }}">
           <i class="fa fa-users"></i><span> Registrations</span>
         </a>
       </li>

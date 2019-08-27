@@ -30,9 +30,13 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
     Route::match(['put', 'patch'],'update/{id}','AdminController@update')->name('admin.admins.update');
 
     
-
+// Getting all the contacts
     Route::get('/contact/all','ContactController@index')->name('admin.contact.all');
+
+    // Getting all the Conference Registrations
+    Route::get('/conference/registrations','ConfregController@index')->name('admin.conf.reg');
     
+    // Handling Conference Committees
     Route::get('/conf_committee/all','ConfcommitteeController@index')->name('admin.confcommittee.all');
     Route::get('/conf_committee/create','ConfcommitteeController@create')->name('admin.confcommittee.create');
     Route::post('/conf_committee/create','ConfcommitteeController@store')->name('admin.confcommittee.store');

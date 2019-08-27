@@ -16,7 +16,9 @@ class ConfregController extends Controller
      */
     public function index()
     {
-        //
+        $pageTitle = 'All Conference Registrations';
+        $confRegistrations = Confregistration::orderBy('created_at', 'desc')->get();
+        return view('admin.confcommittee.index', compact('pageTitle', 'confRegistrations'));
     }
 
     /**
@@ -26,10 +28,10 @@ class ConfregController extends Controller
      */
     public function create()
     {
-        $title='Conference Registration';
+        $title = 'Conference Registration';
 
-        $countries=Country::all();
-        return view('frontend.conference.registration', compact('title','countries'));
+        $countries = Country::all();
+        return view('frontend.conference.registration', compact('title', 'countries'));
     }
 
     /**
@@ -54,41 +56,41 @@ class ConfregController extends Controller
         //     'accommodation'=>'required',
         // ]);
 
-        $this->validate($request,[
-            'natureofparti'=>'required',
-            'fullname'=>'required',
-            'gender'=>'required',
-            'address'=>'required',
-            'country_id'=>'required',
-            'phone'=>'required',
-            'email'=>'required|email',
-            'papertitle'=>'required',
-            'participation'=>'required',
-            'modeofpresent'=>'required',
-            'accommodation'=>'required',
+        $this->validate($request, [
+            'natureofparti' => 'required',
+            'fullname' => 'required',
+            'gender' => 'required',
+            'address' => 'required',
+            'country_id' => 'required',
+            'phone' => 'required',
+            'email' => 'required|email',
+            'papertitle' => 'required',
+            'participation' => 'required',
+            'modeofpresent' => 'required',
+            'accommodation' => 'required',
         ]);
 
-        $confreg=new Confregistration;
+        $confreg = new Confregistration;
 
-        $confreg->confreg_ref='NCESWD' . date('Y') . '_REG-' . rand(22050, 55509);
-        $confreg->natureofparti=$request->natureofparti;
-        $confreg->fullname=$request->fullname;
-        $confreg->gender=$request->gender;
-        $confreg->designation=$request->designation;
-        $confreg->department=$request->department;
-        $confreg->organization=$request->organization;
-        $confreg->address=$request->address;
-        $confreg->country_id=$request->country_id;
-        $confreg->phone=$request->phone;
-        $confreg->email=$request->email;
-        $confreg->papertitle=$request->papertitle;
-        $confreg->participation=$request->participation;
-        $confreg->modeofpresent=$request->modeofpresent;
-        $confreg->accommodation=$request->accommodation;
-        
+        $confreg->confreg_ref = 'NCESWD' . date('Y') . '_REG-' . rand(22050, 55509);
+        $confreg->natureofparti = $request->natureofparti;
+        $confreg->fullname = $request->fullname;
+        $confreg->gender = $request->gender;
+        $confreg->designation = $request->designation;
+        $confreg->department = $request->department;
+        $confreg->organization = $request->organization;
+        $confreg->address = $request->address;
+        $confreg->country_id = $request->country_id;
+        $confreg->phone = $request->phone;
+        $confreg->email = $request->email;
+        $confreg->papertitle = $request->papertitle;
+        $confreg->participation = $request->participation;
+        $confreg->modeofpresent = $request->modeofpresent;
+        $confreg->accommodation = $request->accommodation;
+
         $confreg->save();
 
-        return redirect()->route('conf.registration')->with('success','Your registration detail with ref: '. $confreg->confreg_ref.' has been sent successfully!');
+        return redirect()->route('conf.registration')->with('success', 'Your registration detail with ref: ' . $confreg->confreg_ref . ' has been sent successfully!');
     }
 
     /**
