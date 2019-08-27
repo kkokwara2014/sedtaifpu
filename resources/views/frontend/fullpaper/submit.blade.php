@@ -27,34 +27,34 @@
 
                     <div class="form-group">
                         <label for="">Lead Author's Name</label>
-                        <input type="text" class="form-control" placeholder="Lead Author's Name" name="leadauthor">
+                    <input type="text" class="form-control" placeholder="Lead Author's Name" name="leadauthor" value="{{old('leadauthor')}}">
                     </div>
                     <div class="form-group">
                         <label for="">Lead Author's Email Address</label>
-                        <input type="email" class="form-control" placeholder="Lead Author's Email" name="email">
+                    <input type="email" class="form-control" placeholder="Lead Author's Email" name="email" value="{{old('email')}}">
                     </div>
                     <div class="form-group">
                         <label for="">Co-author(s)</label>
-                        <input type="text" class="form-control" placeholder="Co-author(s)" name="coauthors">
+                    <input type="text" class="form-control" placeholder="Co-author(s)" name="coauthors" value="{{old('coauthors')}}">
                     </div>
                     <div class="form-group">
                         <label for="">Phone</label>
                         <input type="tel" class="form-control" placeholder="Lead Author's Phone Number" name="phone"
-                            maxlength="11">
+                    maxlength="11" value="{{old('phone')}}">
                     </div>
                     <div class="form-group">
                         <label for="">Country</label>
                         <select class="form-control" name="country_id">
                             <option selected="disabled">Select Country</option>
                             @foreach ($countries as $country)
-                            <option value="{{$country->id}}">{{$country->name}}</option>
+                            <option value="{{$country->id}}" @if(old('country_id') == $country->id) {{ 'selected' }} @endif>{{$country->name}}</option>
                             @endforeach
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="">Paper Title</label>
-                        <input type="text" class="form-control" placeholder="Paper Title" name="papertitle">
+                    <input type="text" class="form-control" placeholder="Paper Title" name="papertitle" value="{{old('papertitle')}}">
                     </div>
 
                     <div class="form-group">

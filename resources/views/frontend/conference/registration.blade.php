@@ -26,20 +26,20 @@
                 <div class="col-sm-6">
                     <div class="form-group" {{$errors->has('natureofparti')?'has-error':''}}>
                         <label for="">Nature of Participation <b style="color: red">*</b></label>
-                        <select class="form-control" name="natureofparti">
+                        <select class="form-control" name="natureofparti" >
                             <option selected="disabled">Select Nature of Participation</option>
-                            <option>Academician</option>
-                            <option>Industrialist</option>
-                            <option>Scientist</option>
-                            <option>Student</option>
-                            <option>Others</option>
+                            <option value="1" {{ old('natureofparti') == 1 ? 'selected' : '' }}>Academician</option>
+                            <option value="2"  {{ old('natureofparti') == 2 ? 'selected' : '' }}>Industrialist</option>
+                            <option value="3"  {{ old('natureofparti') == 3 ? 'selected' : '' }}>Scientist</option>
+                            <option value="4"  {{ old('natureofparti') == 4 ? 'selected' : '' }}>Student</option>
+                            <option value="5"  {{ old('natureofparti') == 5 ? 'selected' : '' }}>Others</option>
                         </select>
                         {!! $errors->first('natureofparti','<p style="color:red">:message</p>') !!}
 
                     </div>
                     <div class="form-group" {{$errors->has('fullname')?'has-error':''}}>
                         <label for="">Name of Participant <b style="color: red">*</b></label>
-                        <input type="text" class="form-control" placeholder="Full Name" name="fullname">
+                    <input type="text" class="form-control" placeholder="Full Name" name="fullname" value="{{ old('fullname') }}">
                         {!! $errors->first('fullname','<p style="color:red">:message</p>') !!}
                     </div>
                     <div class="form-group" {{$errors->has('gender')?'has-error':''}}>
@@ -48,8 +48,8 @@
 
                         <select class="form-control" name="gender">
                             <option selected="disabled">Select Gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
+                            <option value="1" {{ old('gender') == 1 ? 'selected' : '' }}>Male</option>
+                            <option value="2" {{ old('gender') == 2 ? 'selected' : '' }}>Female</option>
                         </select>
                         {!! $errors->first('gender','<p style="color:red">:message</p>') !!}
 
@@ -58,15 +58,15 @@
 
                     <div class="form-group">
                         <label for="">Designation</label>
-                        <input type="text" class="form-control" placeholder="Your Designation" name="designation">
+                        <input type="text" class="form-control" placeholder="Your Designation" name="designation" value="{{ old('designation') }}">
                     </div>
                     <div class="form-group">
                         <label for="">Department</label>
-                        <input type="text" class="form-control" placeholder="Your Department" name="department">
+                        <input type="text" class="form-control" placeholder="Your Department" name="department" value="{{ old('department') }}">
                     </div>
                     <div class="form-group">
                         <label for="">Organization</label>
-                        <input type="text" class="form-control" placeholder="Your Organization" name="organization">
+                        <input type="text" class="form-control" placeholder="Your Organization" name="organization" value="{{ old('organization') }}">
                     </div>
                     <div class="form-group" {{$errors->has('address')?'has-error':''}}>
                         <label for="">Correspondence Address <b style="color: red">*</b></label>
@@ -83,7 +83,7 @@
                         <select class="form-control" name="country_id">
                             <option selected="disabled">Select Country</option>
                             @foreach ($countries as $country)
-                            <option value="{{$country->id}}">{{$country->name}}</option>
+                            <option value="{{$country->id}}" @if(old('country_id') == $country->id) {{ 'selected' }} @endif>{{$country->name}}</option>
                             @endforeach
                         </select>
                         {!! $errors->first('country_id','<p style="color:red">:message</p>') !!}
@@ -92,17 +92,17 @@
                     </div>
                     <div class="form-group">
                         <label for="">Phone <b style="color: red">*</b></label>
-                        <input type="tel" class="form-control" placeholder="Phone" name="phone" maxlength="11">
+                        <input type="tel" class="form-control" placeholder="Phone" name="phone" maxlength="11" value="{{ old('phone') }}">
                         {!! $errors->first('phone','<p style="color:red">:message</p>') !!}
                     </div>
                     <div class="form-group" {{$errors->has('email')?'has-error':''}}>
                         <label for="">Email Address <b style="color: red">*</b></label>
-                        <input type="email" class="form-control" placeholder="Your Email Address" name="email">
+                        <input type="email" class="form-control" placeholder="Your Email Address" name="email" value="{{ old('email') }}">
                         {!! $errors->first('email','<p style="color:red">:message</p>') !!}
                     </div>
                     <div class="form-group" {{$errors->has('papertitle')?'has-error':''}}>
                         <label for="">Paper Title <b style="color: red">*</b></label>
-                        <input type="text" class="form-control" placeholder="Paper Title" name="papertitle">
+                        <input type="text" class="form-control" placeholder="Paper Title" name="papertitle" value="{{ old('papertitle') }}">
                         {!! $errors->first('papertitle','<p style="color:red">:message</p>') !!}
                     </div>
 
@@ -111,8 +111,8 @@
 
                         <select class="form-control" name="participation">
                             <option selected="disabled">Select Participation</option>
-                            <option>Author</option>
-                            <option>Delegate</option>
+                            <option value="1" {{ old('participation') == 1 ? 'selected' : '' }}>Author</option>
+                            <option value="2" {{ old('participation') == 2 ? 'selected' : '' }}>Delegate</option>
                         </select>
                         {!! $errors->first('participation','<p style="color:red">:message</p>') !!}
 
@@ -123,8 +123,8 @@
 
                         <select class="form-control" name="modeofpresent">
                             <option selected="disabled">Select Mode of Presentation</option>
-                            <option>Oral</option>
-                            <option>Microsoft Powerpoint</option>
+                            <option value="1" {{ old('modeofpresent') == 1 ? 'selected' : '' }}>Oral</option>
+                            <option value="2" {{ old('modeofpresent') == 2 ? 'selected' : '' }}>Microsoft Powerpoint</option>
                         </select>
                         {!! $errors->first('modeofpresent','<p style="color:red">:message</p>') !!}
 
@@ -134,8 +134,8 @@
 
                         <select class="form-control" name="accommodation">
                             <option selected="disabled">Do you need Accommodation?</option>
-                            <option>Yes</option>
-                            <option>No</option>
+                            <option value="1" {{ old('accommodation') == 1 ? 'selected' : '' }}>Yes</option>
+                            <option value="2" {{ old('accommodation') == 2 ? 'selected' : '' }}>No</option>
                         </select>
                         {!! $errors->first('accommodation','<p style="color:red">:message</p>') !!}
 
