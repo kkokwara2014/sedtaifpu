@@ -33,6 +33,7 @@
                             <tr>
                                 <td>{{ $confreg->confreg_ref }}</td>
                                 <td>{{ $confreg->fullname }}</td>
+                                <td>{{ $confreg->gender }}</td>
                                 <td>{{ $confreg->phone }}</td>
                                 <td>{{ $confreg->email }}</td>
                                 <td>{{ $confreg->papertitle }}</td>

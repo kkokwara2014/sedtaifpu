@@ -79,7 +79,7 @@
 
                     <p>
                       {{ Auth::user()->name }} - Admin
-                      <small>Member since {{Auth::user()->created_at}}</small>
+                      <small>Member since {{Auth::user()->created_at }}</small>
                     </p>
                   </li>
                   <!-- Menu Body -->

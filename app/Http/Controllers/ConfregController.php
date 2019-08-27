@@ -18,7 +18,7 @@ class ConfregController extends Controller
     {
         $pageTitle = 'All Conference Registrations';
         $confRegistrations = Confregistration::orderBy('created_at', 'desc')->get();
-        return view('admin.confcommittee.index', compact('pageTitle', 'confRegistrations'));
+        return view('admin.confregistration.index', compact('pageTitle', 'confRegistrations'));
     }
 
     /**

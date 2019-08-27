@@ -7,7 +7,7 @@
                 <a class="logo" href="{{ route('homepage') }}">
 
                     <!-- logo image  -->
-                    <img src="{{asset('bootstrap_assets/assets/images/logo.png')}}" alt="Logo">
+                    {{-- <img src="{{asset('bootstrap_assets/assets/images/logo.png')}}" alt="Logo"> --}}
                     NCESWCD2019
                 </a>
             </div>
