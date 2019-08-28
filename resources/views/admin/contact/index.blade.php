@@ -6,7 +6,7 @@
 <section class="content">
     <div class="row">
         <!-- Left col -->
-        <section class="col-lg-10 connectedSortable">
+        <section class="col-lg-9 connectedSortable">
             <div class="box">
                 {{-- <div class="box-header">
                     <h3 class="box-title">Data Table With Full Features</h3>
