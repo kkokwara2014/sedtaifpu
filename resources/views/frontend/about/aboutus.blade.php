@@ -4,7 +4,7 @@
 <section id="about" class="section about">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10">
+            <div class="col-sm-9">
 
                 <h3 class="section-title">About Us</h3>
 

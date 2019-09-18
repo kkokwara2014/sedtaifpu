@@ -4,7 +4,7 @@
 <section id="faq" class="section faq">
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-9">
                 <h3 class="section-title">Conference Theme</h3>
                 <strong>
                     ENVIRONMENTAL SUSTAINABILITY AND WEALTH CREATION IN DEVELOPMENT

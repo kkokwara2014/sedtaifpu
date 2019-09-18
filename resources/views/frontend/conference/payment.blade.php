@@ -4,14 +4,14 @@
 <section id="faq" class="section faq">
     <div class="container">
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-md-9">
                 <h3 class="section-title">Payment Details</h3>
 
                 You can make payment in favor of School of Environmental and Design via the
                 following ways :
                 <br><br>
                 <div class="row">
-                    <div class="col-md-11">
+                    <div class="col-md-9">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                             <div class="panel panel-default">
@@ -106,7 +106,7 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-md-11">
+        <div class="col-md-9">
                
         </div>
     </div>

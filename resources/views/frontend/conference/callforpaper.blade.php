@@ -4,7 +4,7 @@
 <section id="faq" class="section faq">
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-9">
                 <h3 class="section-title">Call for Papers</h3>
                 <p style="text-align: justify">The National Conference on Environmental Sustainability and Wealth
                     Creation in Development
